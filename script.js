@@ -14,7 +14,7 @@ const hours = new Date(timeElapsed).getHours();
 
 const hourDeg = ((360/43200) * seconds) - 90 + ((360/720) * minutes) + ((360/12) * hours); 
 
-let test = document.querySelector("#test");
+let test = document.querySelector("#digital-clock-display");
 
 // Get the root element
 
