@@ -3,6 +3,7 @@
     --secDeg: 0deg;
     --minDeg: 0deg;
     --hourDeg: 0deg;
+    --heading-font-size: 2rem;
 }
 
 *{
@@ -17,18 +18,45 @@ body{
     background-color: aquamarine;
 }
 
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#analogue-clock-container{
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px;
+    min-height: 100vh;
+    height: auto;
+    border: solid red 2px;
+}
+
+#digital-clock-container{
+    border: solid red 2px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px;
+    height: auto;
+    min-height: 100vh;
+}
+
 .clock-face{
     aspect-ratio: 1 / 1;
 }
 
 .outer-face{
-    margin-top: 5vh;
-    width: 25%;
+    width: 40%;
+    min-width: 300px;
+    max-width: 600px;
     background-color: darkolivegreen;
     border-radius: 50%;
     z-index: 0;
     display: flex;
     align-items: center;
+    border: solid purple;
 }
 
 .inner-face{
@@ -90,4 +118,40 @@ p{
     margin: 1rem;
     padding: 1rem;
     font-size: 4rem;
+}
+
+
+
+
+
+/*------------------------*/
+/*    Media queries       */
+/*------------------------*/
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+    html{
+        font-size: 20px;
+    }
+
+
+   
+}
+ 
+/* For Tablet View */
+@media screen and (min-device-width: 768px) 
+    and (max-device-width: 1024px) {
+    html{
+        font-size: 16px;
+    }
+
+  
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+    html{
+        font-size: 16px;
+    } 
+
+    
 }

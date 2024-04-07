@@ -7,15 +7,24 @@
     <script src="script.js" defer></script>
     <title>JavaScript + CSS Clock</title>
 </head>
-<body>
-    <div class="clock-face outer-face">
-        <div class="clock-face inner-face">
-            <div class="hand hour-hand"></div>
-            <div class="hand min-hand"></div>
-            <div class = "hand sec-hand"></div>
-            <div class="hand pivot"></div>
+<body class="flex-container">
+    
+        <div id="analogue-clock-container" class="flex-container">
+            <h1 id="analogue-heading" class="heading">The Old</h1>
+            <div class="clock-face outer-face">
+                <div class="clock-face inner-face">
+                    <div class="hand hour-hand"></div>
+                    <div class="hand min-hand"></div>
+                    <div class = "hand sec-hand"></div>
+                    <div class="hand pivot"></div>
+                </div>
+            </div>  
         </div>
-    </div>  
-    <p id="test"></p>
+
+        <div id="digital-clock-container" class="flex-container">
+            <h1 id="digital-heading" class="heading">The New</h1>
+            <p id="test"></p> 
+        </div>  
+    
 </body>
 </html>
