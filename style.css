@@ -18,6 +18,16 @@
     src: url("digital-7.ttf");
 }
 
+@font-face{
+    font-family: 'InlanderDemo-p76jd';
+    src: url("InlanderDemo-p76jd.otf");
+}
+
+@font-face {
+    font-family: 'SlightRegular-RpG13';
+    src: url("SlightRegular-RpG13.ttf");
+}
+
 body{
     background-color: black;
 }
@@ -36,14 +46,11 @@ body{
     min-height: 100vh;
     color: black;
     height: auto;
-    border: solid red 2px;
-    background-image: url("old_background.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(to bottom, #bfa628, #afaf48, #a3b565, #9cb97f, #9dbb97);
+    
 }
 
 #digital-clock-container{
-    border: solid red 2px;
     width: 100%;
     min-width: 320px;
     max-width: 1024px;
@@ -51,9 +58,8 @@ body{
     box-shadow: 5px 5px 5px 5px;
     height: auto;
     min-height: 100vh;
-    background-image: url("new_background.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(to bottom, #3eeb71, #00e8b0, #00e0dd, #00d4f3, #6ac6f1);
+   
 }
 
 .clock-face{
@@ -64,12 +70,11 @@ body{
     width: 40%;
     min-width: 300px;
     max-width: 600px;
-    background-color: darkolivegreen;
+    background-color: rgb(107, 70, 21);
     border-radius: 50%;
     z-index: 0;
     display: flex;
     align-items: center;
-    border: solid purple;
 }
 
 .inner-face{
@@ -125,8 +130,9 @@ system.
 }
 
 #digital-clock-display{
-    border: ridge black 5px;
-    background-color: darkgreen;
+    border: ridge black 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 100, 0, 0.5);
     color: black;
     text-align: center;
     margin: 1rem;
@@ -138,6 +144,17 @@ system.
 
 .heading{
     font-size: 3rem;
+}
+
+#digital-heading{
+    color: rgb(1, 1, 73);
+    font-family: 'SlightRegular-RpG13';
+    font-weight: lighter;
+}
+
+#analogue-heading{
+    color: black;
+    font-family:'InlanderDemo-p76jd';
 }
 
 
