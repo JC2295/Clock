@@ -10,7 +10,6 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
-    color: azure;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,7 +19,7 @@
 }
 
 body{
-    background-color: aquamarine;
+    background-color: black;
 }
 
 .flex-container{
@@ -35,8 +34,12 @@ body{
     min-width: 320px;
     max-width: 1024px;
     min-height: 100vh;
+    color: black;
     height: auto;
     border: solid red 2px;
+    background-image: url("old_background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #digital-clock-container{
@@ -44,8 +47,13 @@ body{
     width: 100%;
     min-width: 320px;
     max-width: 1024px;
+    color: turquoise;
+    box-shadow: 5px 5px 5px 5px;
     height: auto;
     min-height: 100vh;
+    background-image: url("new_background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .clock-face{
@@ -117,21 +125,20 @@ system.
 }
 
 #digital-clock-display{
-    border: solid darkolivegreen 5px;
+    border: ridge black 5px;
+    background-color: darkgreen;
     color: black;
     text-align: center;
     margin: 1rem;
     padding: 1rem;
     font-size: 4rem;
+    font-family: 'digital-7';
+    width: 80%;
 }
 
 .heading{
     font-size: 3rem;
 }
-
-
-
-
 
 
 /*------------------------*/
