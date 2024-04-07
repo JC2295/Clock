@@ -8,11 +8,11 @@ const secDeg = ((360/60) * seconds) - 90;
 
 const minutes = new Date(timeElapsed).getMinutes();
 
-const minDeg = ((360/3600) * seconds) - 90 + ((360/60) * minutes); // keeps resettinng back after min past.
+const minDeg = ((360/3600) * seconds) - 90 + ((360/60) * minutes); 
 
-const hours = new Date(timeElapsed).getHours(); // same issue with hours as a result.
+const hours = new Date(timeElapsed).getHours(); 
 
-const hourDeg = ((360/43200) * seconds) - 90 + ((360/12) * hours);
+const hourDeg = ((360/43200) * seconds) - 90 + ((360/720) * minutes) + ((360/12) * hours); 
 
 let test = document.querySelector("#test");
 
